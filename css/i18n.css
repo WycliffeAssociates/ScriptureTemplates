@@ -1,0 +1,63 @@
+/** Customize Bootstrap These variables and definitions can be found in css/bootstrap/bootstrap/_variables.scss */
+#pinned-header { width: 100%; margin-top: 130px; z-index: 100; background-color: #fff; }
+#pinned-header.pin-to-top { position: fixed; margin-top: 0; top: 65px; box-shadow: 0 0 8px 1px #777; }
+#pinned-header.pin-to-top #build-status-icon { max-width: 35px; overflow: hidden; }
+#pinned-header.pin-to-top .hide-on-pinned { display: none; }
+#pinned-header.pin-to-top #header-title, #pinned-header.pin-to-top #sub-header { display: inline-block; }
+#pinned-header.pin-to-top #sub-header { position: fixed; right: 20px; top: 80px; }
+#pinned-header.pin-to-top .container { padding-top: 6px; padding-bottom: 12px; }
+
+/** Style for i18n template */
+div.search-results-category { margin: 10px 0 20px; }
+div.search-results-category div.search-results-header { display: table; border-bottom: 2px solid #777; min-width: 280px; padding-bottom: 4px; }
+div.search-results-category div.search-listing .updated-views-div, div.search-results-category div.search-listing .author-div, div.search-results-category div.search-listing .language-code-div { color: #555; }
+div.search-results-category div.search-listing .updated-span, div.search-results-category div.search-listing .author-div, div.search-results-category div.search-listing .language-code-div { font-style: italic; }
+div.search-results-category div.search-listing div.listing-container { display: inline-block; float: left; border: 2px solid #eee; border-radius: 8px; margin: 8px; position: relative; }
+div.search-results-category div.search-listing div.listing-container table { width: 360px; height: 200px; }
+div.search-results-category div.search-listing div.listing-container table td { vertical-align: top; }
+div.search-results-category div.search-listing div.listing-container table td.column-1 { padding: 10px 8px 0 10px; }
+div.search-results-category div.search-listing div.listing-container table td.column-2 { padding: 2px 10px 10px 0; width: 100%; }
+div.search-results-category div.search-listing div.listing-container table td .pinned-to-bottom { position: absolute; bottom: 0; margin-bottom: 10px; }
+div.search-results-category div.search-listing div.listing-container h3 { margin: 0 0 4px; }
+div.search-results-category div.search-listing div.listing-container h3 span { font-size: 20px; font-weight: 700; }
+div.search-results-category div.search-listing div.listing-container .fa-star-o { font-size: 22px; }
+div.search-results-category div.search-listing div.listing-container:hover, div.search-results-category div.search-listing div.listing-container a:hover { background-color: #44ace8; color: #ffffff; }
+div.search-results-category div.search-listing div.listing-container:hover .updated-views-div, div.search-results-category div.search-listing div.listing-container:hover .author-div, div.search-results-category div.search-listing div.listing-container:hover .language-code-div, div.search-results-category div.search-listing div.listing-container a:hover .updated-views-div, div.search-results-category div.search-listing div.listing-container a:hover .author-div, div.search-results-category div.search-listing div.listing-container a:hover .language-code-div { color: #ffffff; }
+div.search-results-category div.search-listing div.more-container { display: inline-block; float: left; margin: 8px; width: 200px; height: 340px; line-height: 200px; text-align: center; }
+div.search-results-category div.search-listing div.more-container span { vertical-align: middle; line-height: normal; }
+div.search-results-category div.search-listing .no-results, div.search-results-category div.search-listing .loading-results { font-style: italic; margin: 20px; }
+
+#popular-div { margin-top: 100px; }
+
+.ui-helper-hidden-accessible { display: none; }
+
+div.clear { clear: both; margin-bottom: 40px; }
+
+.bold { font-weight: 700; }
+
+#pinned-header.pin-to-top .container { padding: 12px 15px !important; }
+#pinned-header.pin-to-top .container .float-left { display: inline-block; float: left; }
+#pinned-header.pin-to-top .container .float-right { display: inline-block; float: right; }
+#pinned-header.pin-to-top .container table { height: 32px; }
+#pinned-header.pin-to-top .container #search-button { padding: 0 8px; background-color: #44ace8; color: #ffffff; text-align: center; cursor: pointer; font-size: 18px; }
+#pinned-header.pin-to-top .container #browse-button { background-color: #44ace8; color: #ffffff; text-align: center; cursor: pointer; padding: 0 8px; border-left: 3px solid #fff; white-space: nowrap; font-size: 18px; }
+#pinned-header.pin-to-top .container #search-button:hover, #pinned-header.pin-to-top .container #browse-button:hover, #pinned-header.pin-to-top .container .lc-filter:hover { background-color: #000000; }
+#pinned-header.pin-to-top .container #search-field { height: 40px; font-size: 18px; width: 300px; vertical-align: top; }
+#pinned-header.pin-to-top .container .lc-filter { display: inline-block; height: 40px; padding: 8px 12px; font-size: 16px; font-style: italic; font-weight: bold; text-align: center; vertical-align: top; text-transform: uppercase; margin-right: 5px; background-color: #44ace8; color: #ffffff; cursor: pointer; position: relative; }
+#pinned-header.pin-to-top .container .lc-filter .remove-lc-x { font-size: 10px; color: #ffffff; position: absolute; right: 2px; top: 1px; text-transform: none; font-weight: bold; }
+
+.ui-front { z-index: 100; }
+
+.ui-autocomplete { background-color: #fff; border: 1px solid #999; padding: 0; width: 300px; }
+.ui-autocomplete li { list-style: none; margin: 0; padding: 6px 0 6px 12px; border-top: 1px solid #fff; border-bottom: 1px solid #fff; cursor: pointer; }
+.ui-autocomplete li:hover { border-top: 1px solid #44ace8; border-bottom: 1px solid #44ace8; background-color: #44ace8; color: #ffffff; }
+
+@media (max-width: 1199px) { div.search-results-category div.search-listing div.listing-container table { width: 450px; height: 160px; }
+  div.search-results-category div.search-listing div.more-container { width: 450px; height: 160px; line-height: 160px; } }
+@media (max-width: 991px) { div.search-results-category div.search-listing div.listing-container table { width: 340px; height: 160px; }
+  div.search-results-category div.search-listing div.listing-container h3 span { font-size: 16px; }
+  div.search-results-category div.search-listing div.listing-container .updated-views-div, div.search-results-category div.search-listing div.listing-container .author-div, div.search-results-category div.search-listing div.listing-container .language-code-div { font-size: 15px; }
+  div.search-results-category div.search-listing div.more-container { width: 340px; height: 160px; line-height: 160px; } }
+@media (max-width: 840px) { #pinned-header.pin-to-top { top: 60px !important; } }
+@media (max-width: 764px) { div.search-results-category div.search-listing div.listing-container table { width: 100%; height: 160px; }
+  div.search-results-category div.more-container { width: 100%; height: 60px; line-height: 60px; } }
