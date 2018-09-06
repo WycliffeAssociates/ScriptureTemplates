@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English | Door43</title>
+
+  <meta name="description" content="unrestricted biblical content in every language">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/i18n.css">
+  <link rel="stylesheet" type="text/css" href="/css/en.css">
+  <link rel="canonical" href="https://door43.org/en">
+  <script type="text/javascript">
+    var loadingText = "Loading...";
+    var noResultsText = "No results found.";
+  </script>
+</head>
+
+
+<body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+<header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <table class="navbar-brand" dir="ltr" onclick="window.location='/'">
+              <tr>
+                  <td><img class="navbar-brand-image" src="https://cdn.door43.org/assets/img/logo-base%402x.png"></td>
+                  <td><div class="navbar-brand-title">Door43</div>
+                      <div class="navbar-brand-subtitle">open-licensed biblical content</div></td>
+              </tr>
+          </table>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="fa fa-align-justify"></span>
+        </button>
+      </div>
+      <div id="main-navbar" class="navbar-nav navbar-right collapse navbar-collapse">
+        <ul id="menu-main-menu" class="nav navbar-nav">
+          
+            <li class="dropdown"><a href="/en/about/" aria-haspopup="true" aria-expanded="false">About</a> <button type="button" class="btn btn-nav-dark dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span><span class="fa fa-caret-up"></span></button>
+<ul class="dropdown-menu dropdown-menu-left">
+<li class=""><a href="/en/statement-of-faith/">Statement of Faith</a></li>
+<li class=""><a href="/en/translation-guidelines/">Translation Guidelines</a></li>
+<li class=""><a href="/en/legal/">Legal Information</a></li>
+</ul>
+</li>
+<li class=""><a href="/en/">Browse</a></li>
+<li class=""><a href="/en/contact/">Contact</a></li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="print-header" style="display: none;">
+  <img src="https://cdn.door43.org/assets/img/logo.png" class="print-logo" alt="Door43 Logo">
+  <h2 class="site-description">Open-licensed biblical content</h2>
+</div>
+
+
+<script type="html/template" id="listing-template">
+<div class="listing-container">
+  <a href="">
+    <table>
+      <tr>
+        <td class="column-1"><i class="fa fa-star-o"></i></td>
+        <td class="column-2">
+          <h3><span class="title-span"></span></h3>
+          <div class="updated-views-div"><span class="updated-span"></span>&emsp;<i class="fa fa-eye"></i> <span class="views-span"></span></div>
+          <div class="author-div"></div>
+          <div class="pinned-to-bottom">
+            <h3><span class="language-title-span"></span></h3>
+            <div class="language-code-div"></div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </a>
+</div>
+</script>
+
+<script type="html/template" id="more-template">
+  <div class="more-container">
+    <span><a href="#" class="bold">View more...</a></span>
+  </div>
+</script>
+
+<header id="pinned-header" class="pin-to-top">
+  <div class="container">
+    <div class="float-left">
+      <table>
+        <tr>
+          <td><a class="bold" href="#" onclick="return scrollToResults('popular-div');">Popular</a>&emsp;<a class="bold" href="#" onclick="return scrollToResults('recent-div');">Recent</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="float-right">
+      <table>
+        <tr>
+          <td><span id="language-filter"></span> <input type="text" id="search-field" placeholder="Search"></td>
+          <td id="search-button"><i class="fa fa-search"></i></td>
+          <!-- Commented out since not used yet -RHM
+          <td id="browse-button"><i class="fa fa-globe"></i> Browse</td>
+          -->
+        </tr>
+      </table>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div id="popular-div" class="search-results-category">
+    <div class="search-results-header">Popular</div>
+    <div class="search-listing"></div>
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="recent-div" class="search-results-category">
+    <div class="search-results-header">Recently Updated</div>
+    <div class="search-listing"></div>
+  </div>
+
+  <div class="clear"></div>
+</div>
+<footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+
+  <nav class="nav-secondary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4 text-center">
+      <ul class="footer-secondary-nav nav nav-pills nav-justified">
+        <li class=""><a href="/en/about/">About</a></li>
+<li class=""><a href="/en/">Browse</a></li>
+<li class=""><a href="/en/contact/">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+
+  <div class="container">
+    <p style="margin-top:18px">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="CC BY-SA License" style="border-width:0" src="https://cdn.door43.org/assets/img/icons/CC-BY-SA-icon-88x31.png" /></a>
+      <br />
+      The content of this page from Door43 is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.
+    </p>
+  </div>
+</footer>
+<footer class="print-footer" style="display: none;">
+  <div class="row">
+    <div class="one-half first">
+      <img src="https://cdn.door43.org/assets/img/icons/icon-d43.png" alt="Door43"/>
+    </div>
+    <div class="one-half last">
+      <p>Source: https://door43.org/en/index.html</p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</footer>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/moment.min.js"></script>
+<script type="text/javascript" src="/js/underscore.min.js"></script>
+<script type="text/javascript" src="/js/application.js"></script>
+<script type="text/javascript" src="/js/aws-sdk-2.80.0.min.js"></script>
+<script type="text/javascript" src="/js/general-tools.js"></script>
+<script type="text/javascript">
+  var locale = {"date":{"day_names":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"abbr_day_names":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"month_names":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr_month_names":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"formats":{"default":"%Y-%m-%d","long":"%B %d, %Y","short":"%b %d"}}};
+  var l10n = {"day":["days","day","days","days"],"week":["weeks","week","weeks","weeks"],"month":["months","month","months","months"],"updated_today":"Updated today","updated_days":"Updated {0} {1} ago","updated_weeks":"Updated {0} {1} ago","updated_months":"Updated {0} {1} ago","author":"Author: {0}","language":"Language","language_with_code":"{0} &mdash; {1}"};
+</script>
+<script type="text/javascript" src="/js/i18n.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-60106521-4']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' === document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</body>
+</html>

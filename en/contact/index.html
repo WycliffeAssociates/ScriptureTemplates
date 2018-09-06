@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+
+  <meta name="description" content="unrestricted biblical content in every language">
+  <meta name="keywords" content="">
+
+  <link rel="stylesheet" type="text/css" href="/css/main.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="/css/print.css" media="print">
+
+  <link rel="canonical" href="https://door43.org/en/contact">
+  <!-- <link rel="" href="/favicon.ico" type="image/x-icon"> -->
+</head>
+
+
+  <body itemscope="itemscope" itemtype="http://schema.org/WebPage">
+
+    <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <table class="navbar-brand" dir="ltr" onclick="window.location='/'">
+          <tr>
+            <td><img class="navbar-brand-image" src="https://cdn.door43.org/assets/img/logo-base%402x.png"></td>
+            <td><div class="navbar-brand-title">Door43</div>
+              <div class="navbar-brand-subtitle">open-licensed biblical content</div></td>
+          </tr>
+        </table>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle Navigation</span>
+          <span class="fa fa-align-justify"></span>
+        </button>
+      </div>
+      <div id="main-navbar" class="navbar-nav navbar-right collapse navbar-collapse">
+        <ul id="menu-main-menu" class="nav navbar-nav">
+          
+            <li class="dropdown"><a href="/en/about/" aria-haspopup="true" aria-expanded="false">About</a> <button type="button" class="btn btn-nav-dark dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down"></span><span class="fa fa-caret-up"></span></button>
+<ul class="dropdown-menu dropdown-menu-left">
+<li class=""><a href="/en/about/new_door43/">New Site</a></li>
+<li class=""><a href="/en/statement-of-faith/">Statement of Faith</a></li>
+<li class=""><a href="/en/translation-guidelines/">Translation Guidelines</a></li>
+<li class=""><a href="/en/legal/">Legal Information</a></li>
+</ul>
+</li>
+<li class=""><a href="/en/">Browse</a></li>
+<li class=""><a href="/en/contact/">Contact</a></li>
+
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="print-header" style="display: none;">
+  <img src="https://cdn.door43.org/assets/img/logo.png" class="print-logo" alt="Door43 Logo">
+  <h2 class="site-description">open-licensed biblical content</h2>
+</div>
+
+
+    <div class="content-container container">
+      <main class="content" role="main" itemprop="mainContentOfPage">
+        <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork">
+          <header class="text-center">
+            <div class="entry-header-title">
+              
+                <h1 itemprop="headline">Contact</h1>
+              
+            </div>
+          </header>
+          <div class="page-content row">
+            <div class="col-md-8 col-md-offset-2">
+              <h2 id="slack">Slack</h2>
+
+<p>The fastest way to get answers is to ask the <a href="https://team43.slack.com/messages/helpdesk/">#helpdesk</a> channel in our Team43 Slack Group.  Use the form below to join our Slack team if you are not a member.</p>
+
+<script type="text/javascript">
+  function disable_page() {
+    var cover = document.getElementById('gray_cover');
+    cover.style.display = 'inline-block';
+  }
+
+  function enable_page() {
+    var cover = document.getElementById('gray_cover');
+    cover.style.display = 'none';
+  }
+
+  function signUp(f) {
+
+    var url = 'https://api.door43.org/slack/invite';
+    disable_page();
+
+    $.ajax({
+        url: url,
+        type: 'GET',
+        data: $(f).serialize(),
+        dataType: 'jsonp',
+        success: function (data, status) {
+            if (data['result'] === 'success') {
+                alert('An invitation has been sent to your e-mail address');
+            }
+            else {
+                alert('A problem was encountered: ' + data['message'] + '.');
+            }
+            enable_page();
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log('Error: ' + textStatus + '\n' +  errorThrown);
+            alert(textStatus);
+            enable_page();
+        }
+    });
+
+    return false;
+  }
+</script>
+
+<div id="gray_cover" style="position:fixed;top:0;left:0;overflow:hidden;display:none;width:100%;height:100%;background-color:#000000;opacity:0.5;MozOpacity:0.5;z-index:150;filter:alpha(opacity=50);cursor: wait;"></div>
+<form onsubmit="return signUp(this)" action="" method="POST">
+    <fieldset id="slack-fields">
+        <legend>Team43 Slack Sign Up Form</legend>
+        <p>By using this service you agree to our <a href="/en/slack-terms-of-service/">Slack Terms of Service</a>.</p>
+        <label for="first_name"><span>First Name: </span><input type="text" name="first_name" id="first_name" /></label>
+        <label for="last_name"><span>Last Name: </span><input type="text" name="last_name" id="last-name" /></label>
+        <label for="email"><span>E-Mail: </span><input type="email" name="email" id="email" /></label>
+        <input type="hidden" name="token" value="IByqnIF8ql+jXkKvvTQZCvc32RH2K2jKxRyy2EeLE7rmjui3VHBAQTelUi8vz3Dmw5c9zxV7YL9UupucBADk1RJn+hgg2P+S" />
+        <button type="submit">Sign Up</button>
+    </fieldset>
+</form>
+
+<h2 id="e-mail">E-Mail</h2>
+
+<p>If you prefer, you may also e-mail our help desk at <a href="mailto:help@door43.org" title="help@door43.org">help@door43.org</a>.</p>
+
+<h2 id="knowledgebase">Knowledgebase</h2>
+
+<p>You may also find help articles on the <a href="http://help.door43.org/en/knowledgebase">Door43 Knowledgebase</a>.</p>
+
+
+              
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+
+    <footer class="site-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+
+  <nav class="nav-secondary" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4 text-center">
+      <ul class="footer-secondary-nav nav nav-pills nav-justified">
+        <li class=""><a href="/en/about/">About</a></li>
+<li class=""><a href="/en/">Browse</a></li>
+<li class=""><a href="/en/contact/">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav> 
+
+
+  <div class="container">
+    <p style="margin-top:18px">
+      <em>Looking for the old DokuWiki site? <a href="/en/about/new_door43/">Click here</a>.</em>
+      <br />
+      <br />
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="CC BY-SA License" style="border-width:0" src="https://cdn.door43.org/assets/img/icons/CC-BY-SA-icon-88x31.png" /></a>
+      <br />
+      <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The content of this page ("<a xmlns:dct="http://purl.org/dc/terms/" href="https://door43.org/en/contact" rel="dct:source">Contact</a>") from </span>
+      <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Door43</span> is licensed under a
+      <br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </p>
+  </div>
+</footer>
+<footer class="print-footer" style="display: none;">
+  <div class="row">
+    <div class="one-half first">
+      <img src="https://cdn.door43.org/assets/img/icons/icon-d43.png" alt="Door43"/>
+    </div>
+    <div class="one-half last">
+      <p>Source: https://door43.org/en/contact/index.html</p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</footer>
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/parallax.min.js"></script>
+<script type="text/javascript" src="/js/application.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-60106521-4']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  </body>
+
+</html>
